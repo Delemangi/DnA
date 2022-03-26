@@ -1,4 +1,4 @@
-import Queue
+from queue import Queue
 
 
 class FraerTipka:
@@ -31,7 +31,7 @@ class Graph:
         return self.matrix[fr][to] != self.infinity
 
     def connected_vertices(self, start):
-        queue = queue.Queue()
+        queue = Queue()
         queue.put(start)
         connected = {start}
 
